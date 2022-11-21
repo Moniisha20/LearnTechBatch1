@@ -10,8 +10,10 @@ public class Data_Properties {
 		FileReader Reader = new FileReader("Properties\\Data.properties");
 		Properties p = new Properties();
 		p.load(Reader);
+		String uname = p.getProperty("username");
 		String pwd = p.getProperty("password");
 		String url = p.getProperty("url");
+				System.out.println(uname);
 
 		System.out.println(pwd);
 	
